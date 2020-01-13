@@ -95,46 +95,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*Large Background Image*/
+
 html {
-  background: url('https://thumbs.dreamstime.com/z/random-halftone-colorful-back-5325625.jpg') repeat center center fixed;
-    height: 100%;
+  background-color: #fff;
+  height: 100%;
 }
 
 body {
-    height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 2em;
+  font-size: 1.25em;
+  height: 100%;
 }
 
 .wrapper {
-  margin: 0;
-  height: 100%;
-  width: 100%;
+  /*add display:flex and set justify-content to space-between*/
+  font-weight: 700;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#content {
-  background:rgba(200,30,40,0.7);
+.div-1, .div-2, .div-3 {
+  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-  font-size: 1.25em;
   line-height: 1.5em;
-  border-radius: 10px;
-  padding: 0px 30px;
-  width: 300px;
+  font-size: 1.6em;
+  background-color: #f16059;
   height: 300px;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-#content p span {
-  font-family: 'Lora', sans-serif;
-}
-
 
 
 
@@ -218,10 +210,6 @@ body {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
